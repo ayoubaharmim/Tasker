@@ -4,8 +4,7 @@ import { COLORS, FONTCOLORS } from '../constants';
 
 type CategoryProps = {
     title: string,
-    numberOfTasks: string,
-    cardColor?: string
+    numberOfTasks: string
 }
 
 const Category = (props: CategoryProps) => {
