@@ -6,4 +6,8 @@ export const COLORS = {
     RED: '#F45E6D',
     GREEN: '#61DEA4',
     GREY: '#EBEFF5'
-}
+};
+
+export const FONTCOLORS = {
+    WHITE: "#FFFFFF"
+};
