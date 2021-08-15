@@ -1,3 +1,7 @@
 import Category from "./Category";
+import Task from "./Task";
 
-export {Category}
+export {
+Category,
+Task
+};

@@ -10,7 +10,7 @@
  import {
    Colors
  } from 'react-native/Libraries/NewAppScreen';
-import { Category } from './src/components';
+import { Category, Task } from './src/components';
 
  const App = () => {
    const isDarkMode = useColorScheme() === 'dark';
@@ -25,9 +25,8 @@ import { Category } from './src/components';
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       </SafeAreaView>
       <View style={{flex: 1}}>
-        <Category 
-          title="Shopping"
-          numberOfTasks="12 Tasks"/>
+        <Task
+          title="This is a Damn ass Task"/>
       </View>
      </>
    );
