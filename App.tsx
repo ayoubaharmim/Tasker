@@ -1,10 +1,8 @@
  import React from 'react';
  import {
    SafeAreaView,
-   ScrollView,
    StatusBar,
    StyleSheet,
-   Text,
    useColorScheme,
    View,
  } from 'react-native';
@@ -12,6 +10,7 @@
  import {
    Colors
  } from 'react-native/Libraries/NewAppScreen';
+import { Category } from './src/components';
 
  const App = () => {
    const isDarkMode = useColorScheme() === 'dark';
@@ -21,9 +20,16 @@
    };
 
    return (
-     <SafeAreaView style={backgroundStyle}>
-       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-     </SafeAreaView>
+     <>
+      <SafeAreaView style={backgroundStyle}>
+        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      </SafeAreaView>
+      <View style={{flex: 1}}>
+        <Category 
+          title="Shopping"
+          numberOfTasks="12 Tasks"/>
+      </View>
+     </>
    );
  };
 
