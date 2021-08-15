@@ -12,8 +12,6 @@
  import {
    Colors
  } from 'react-native/Libraries/NewAppScreen';
-import Category from './src/components/category/category.component';
-import CardView from './src/components/todoCard/todoCard.component';
 
  const App = () => {
    const isDarkMode = useColorScheme() === 'dark';
@@ -25,10 +23,6 @@ import CardView from './src/components/todoCard/todoCard.component';
    return (
      <SafeAreaView style={backgroundStyle}>
        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       <Category title={"Inbox"}
-                 description={"3 tasks"}
-                 onPress={() => console.log('Under Construction')}/>
-      <CardView/>
      </SafeAreaView>
    );
  };
