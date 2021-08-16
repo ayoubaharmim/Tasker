@@ -9,5 +9,6 @@ export const COLORS = {
 };
 
 export const FONTCOLORS = {
-    WHITE: "#FFFFFF"
+    WHITE: "#FFFFFF",
+    LIGHTGREY: "#DADADA"
 };
